@@ -1,0 +1,16 @@
+PODS:
+  - GofMediator (0.1.0)
+
+DEPENDENCIES:
+  - GofMediator (= 0.1.0)
+
+SPEC REPOS:
+  trunk:
+    - GofMediator
+
+SPEC CHECKSUMS:
+  GofMediator: 1ac237fcdfb8d2fc9c63944c01f4ef2611eb3052
+
+PODFILE CHECKSUM: 7492954baadf4a6ae67f864dc9890166eb538046
+
+COCOAPODS: 1.9.1
