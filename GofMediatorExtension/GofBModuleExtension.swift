@@ -14,7 +14,7 @@ public extension GofMediator {
             "callBack":callback,
             kMediatorSwiftModuleNameKey:"GofBModule"
             ] as [AnyHashable : Any]
-        if let viewController = self.gof_performNative(withTarget:"B", action: "CategoryBViewCtrl", params: params) as? UIViewController {
+        if let viewController = self.gof_performNative(withTarget:"B", action: "ExtensionBViewCtrl", params: params) as? UIViewController {
             return viewController
         }
         return nil
