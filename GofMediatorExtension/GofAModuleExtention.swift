@@ -12,7 +12,7 @@ public extension GofMediator {
     @objc func gof_showAModuleVC(callback:@escaping (String) -> Void) -> UIViewController? {
         let callbackBlock = callback as @convention(block) (String) -> Void
         let callbackBlockObject = unsafeBitCast(callbackBlock, to: AnyObject.self)
-        let params = ["callback":callbackBlockObject] as [AnyHashable:Any]
+        let params = ["callBack":callbackBlockObject] as [AnyHashable:Any]
         if let viewController = self.gof_performNative(withTarget: "A", action: "AViewCtrl", params: params) as? UIViewController {
             return viewController;
         }

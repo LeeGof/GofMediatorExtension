@@ -11,7 +11,7 @@ import GofMediator
 public extension GofMediator {
     @objc func gof_showBModuleVC(callback:@escaping (String) -> Void) -> UIViewController? {
         let params = [
-            "callback":callback,
+            "callBack":callback,
             kMediatorSwiftModuleNameKey:"GofBModule"
             ] as [AnyHashable : Any]
         if let viewController = self.gof_performNative(withTarget:"B", action: "CategoryBViewCtrl", params: params) as? UIViewController {
